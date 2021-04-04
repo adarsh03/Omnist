@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1sp"
+        app:cardCornerRadius="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25sp">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Project" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProjectColon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tvProjectTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=" : " />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvProjectFilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="Project"
+        app:layout_constraintStart_toEndOf="@id/tvProjectColon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTowerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tvProjectTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Tower"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTowerColon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvProjectColon"
+        app:layout_constraintStart_toEndOf="@id/tvProjectTitle"
+        android:text=" : " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTowerFilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Tower"
+        app:layout_constraintTop_toBottomOf="@id/tvProjectFilled"
+        app:layout_constraintStart_toEndOf="@+id/tvTowerColon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFlatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tvTowerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Flat/Unit" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFlatColon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="25sp"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tvTowerColon"
+        app:layout_constraintStart_toEndOf="@id/tvFlatTitle"
+        android:text=" : " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFlatFilled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Flat Number"
+        app:layout_constraintTop_toBottomOf="@id/tvTowerFilled"
+        app:layout_constraintStart_toEndOf="@+id/tvFlatColon"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
